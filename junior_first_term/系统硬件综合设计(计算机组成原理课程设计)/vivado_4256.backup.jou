@@ -1,0 +1,151 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Jan  3 20:56:07 2022
+# Process ID: 4256
+# Current directory: D:/vivadoproject/singleCPUhlz
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2512 D:\vivadoproject\singleCPUhlz\CPU.xpr
+# Log file: D:/vivadoproject/singleCPUhlz/vivado.log
+# Journal file: D:/vivadoproject/singleCPUhlz\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivadoproject/singleCPUhlz/CPU.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/vivadoproject/singleCPUhlz/cpu_sim_behav.wcfg
+source cpu_sim.tcl
+save_wave_config {D:/vivadoproject/singleCPUhlz/cpu_sim_behav.wcfg}
+synth_design -rtl -name rtl_1
+current_wave_config {cpu_sim_behav.wcfg}
+add_wave {{/cpu_sim/one/cu/ALUSrcA}} 
+current_wave_config {cpu_sim_behav.wcfg}
+add_wave {{/cpu_sim/one/cu/ALUSrcB}} 
+current_wave_config {cpu_sim_behav.wcfg}
+add_wave {{/cpu_sim/one/cu/RegDst}} 
+save_wave_config {D:/vivadoproject/singleCPUhlz/cpu_sim_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/vivadoproject/singleCPUhlz/cpu_sim_behav.wcfg
+source cpu_sim.tcl
+current_wave_config {cpu_sim_behav.wcfg}
+add_wave {{/cpu_sim/one/U5_1/result}} 
+save_wave_config {D:/vivadoproject/singleCPUhlz/cpu_sim_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/vivadoproject/singleCPUhlz/cpu_sim_behav.wcfg
+source cpu_sim.tcl
+current_wave_config {cpu_sim_behav.wcfg}
+add_wave {{/cpu_sim/one/U32_1/select_one}} 
+current_wave_config {cpu_sim_behav.wcfg}
+add_wave {{/cpu_sim/one/U32_1/select_two}} 
+current_wave_config {cpu_sim_behav.wcfg}
+add_wave {{/cpu_sim/one/U32_1/result}} 
+save_wave_config {D:/vivadoproject/singleCPUhlz/cpu_sim_behav.wcfg}
+current_wave_config {cpu_sim_behav.wcfg}
+add_wave {{/cpu_sim/one/U32_2/select_one}} 
+current_wave_config {cpu_sim_behav.wcfg}
+add_wave {{/cpu_sim/one/U32_2/select_two}} 
+current_wave_config {cpu_sim_behav.wcfg}
+add_wave {{/cpu_sim/one/U32_2/result}} 
+current_wave_config {cpu_sim_behav.wcfg}
+add_wave {{/cpu_sim/one/cu/DBDataSrc}} 
+current_wave_config {cpu_sim_behav.wcfg}
+add_wave {{/cpu_sim/one/U32_3/select_one}} 
+current_wave_config {cpu_sim_behav.wcfg}
+add_wave {{/cpu_sim/one/U32_3/select_two}} 
+current_wave_config {cpu_sim_behav.wcfg}
+add_wave {{/cpu_sim/one/U32_3/result}} 
+reset_run synth_1
+save_wave_config {D:/vivadoproject/singleCPUhlz/cpu_sim_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/vivadoproject/singleCPUhlz/cpu_sim_behav.wcfg
+source cpu_sim.tcl
+save_wave_config {D:/vivadoproject/singleCPUhlz/cpu_sim_behav.wcfg}
+save_wave_config {D:/vivadoproject/singleCPUhlz/cpu_sim_behav.wcfg}
+close_sim
+close_project
+open_project D:/vivadoproject/Single_CPU_Design/Single_CPU_Design.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/vivadoproject/Single_CPU_Design/Test_CPU_behav.wcfg
+source Test_CPU.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadoproject/Single_CPU_Design/Test_CPU_behav.wcfg
+source Test_CPU.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadoproject/Single_CPU_Design/Test_CPU_behav.wcfg
+source Test_CPU.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadoproject/Single_CPU_Design/Test_CPU_behav.wcfg
+source Test_CPU.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadoproject/Single_CPU_Design/Test_CPU_behav.wcfg
+source Test_CPU.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadoproject/Single_CPU_Design/Test_CPU_behav.wcfg
+source Test_CPU.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadoproject/Single_CPU_Design/Test_CPU_behav.wcfg
+source Test_CPU.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadoproject/Single_CPU_Design/Test_CPU_behav.wcfg
+source Test_CPU.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadoproject/Single_CPU_Design/Test_CPU_behav.wcfg
+source Test_CPU.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadoproject/Single_CPU_Design/Test_CPU_behav.wcfg
+source Test_CPU.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadoproject/Single_CPU_Design/Test_CPU_behav.wcfg
+source Test_CPU.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadoproject/Single_CPU_Design/Test_CPU_behav.wcfg
+source Test_CPU.tcl
+current_wave_config {Test_CPU_behav.wcfg}
+add_wave {{/Test_CPU/uut/InsMEM/DataOut}} 
+current_wave_config {Test_CPU_behav.wcfg}
+add_wave {{/Test_CPU/uut/InsMEM/InsMemRW}} 
+save_wave_config {D:/vivadoproject/Single_CPU_Design/Test_CPU_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/vivadoproject/Single_CPU_Design/Test_CPU_behav.wcfg
+source Test_CPU.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadoproject/Single_CPU_Design/Test_CPU_behav.wcfg
+source Test_CPU.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadoproject/Single_CPU_Design/Test_CPU_behav.wcfg
+source Test_CPU.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadoproject/Single_CPU_Design/Test_CPU_behav.wcfg
+source Test_CPU.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadoproject/Single_CPU_Design/Test_CPU_behav.wcfg
+source Test_CPU.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadoproject/Single_CPU_Design/Test_CPU_behav.wcfg
+source Test_CPU.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadoproject/Single_CPU_Design/Test_CPU_behav.wcfg
+source Test_CPU.tcl
+close_sim

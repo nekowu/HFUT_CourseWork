@@ -1,0 +1,1091 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Jan  4 15:38:22 2022
+# Process ID: 15328
+# Current directory: D:/vivadoproject/singleCPUhlz
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10204 D:\vivadoproject\singleCPUhlz\CPU.xpr
+# Log file: D:/vivadoproject/singleCPUhlz/vivado.log
+# Journal file: D:/vivadoproject/singleCPUhlz\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivadoproject/singleCPUhlz/CPU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vvvvvvvvvv/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 1066.043 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/vivadoproject/singleCPUhlz/CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/vivadoproject/singleCPUhlz/CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/vivadoproject/singleCPUhlz/CPU.sim/sim_1/behav/xsim'
+"xelab -wto 84d944399ac04f24940df639ce777d04 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_sim_behav xil_defaultlib.cpu_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/vvvvvvvvvv/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 84d944399ac04f24940df639ce777d04 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_sim_behav xil_defaultlib.cpu_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/vivadoproject/singleCPUhlz/CPU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cpu_sim_behav -key {Behavioral:sim_1:Functional:cpu_sim} -tclbatch {cpu_sim.tcl} -view {D:/vivadoproject/singleCPUhlz/cpu_sim_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config D:/vivadoproject/singleCPUhlz/cpu_sim_behav.wcfg
+source cpu_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cpu_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1066.043 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/vivadoproject/singleCPUhlz/CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/vivadoproject/singleCPUhlz/CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/Extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/Main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/PCcounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCcounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/Register File.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/select_32_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module select_32_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/select_32or5_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module select_32or5_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/select_5_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module select_5_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sim_1/new/cpu_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/vivadoproject/singleCPUhlz/CPU.sim/sim_1/behav/xsim'
+"xelab -wto 84d944399ac04f24940df639ce777d04 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_sim_behav xil_defaultlib.cpu_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/vvvvvvvvvv/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 84d944399ac04f24940df639ce777d04 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_sim_behav xil_defaultlib.cpu_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.ROM
+Compiling module xil_defaultlib.select_5_bit
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.Extend
+Compiling module xil_defaultlib.select_32or5_bit
+Compiling module xil_defaultlib.select_32_bit
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.PCcounter
+Compiling module xil_defaultlib.Main
+Compiling module xil_defaultlib.cpu_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/vivadoproject/singleCPUhlz/CPU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cpu_sim_behav -key {Behavioral:sim_1:Functional:cpu_sim} -tclbatch {cpu_sim.tcl} -view {D:/vivadoproject/singleCPUhlz/cpu_sim_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config D:/vivadoproject/singleCPUhlz/cpu_sim_behav.wcfg
+source cpu_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cpu_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1066.043 ; gain = 0.000
+launch_runs synth_1 -jobs 4
+[Tue Jan  4 15:47:56 2022] Launched synth_1...
+Run output will be captured here: D:/vivadoproject/singleCPUhlz/CPU.runs/synth_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: Main
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1512.504 ; gain = 231.109
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Main' [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/Main.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/ControlUnit.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/ControlUnit.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (1#1) [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/ControlUnit.v:23]
+WARNING: [Synth 8-6104] Input port 'Reset' has an internal driver [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/Main.v:52]
+INFO: [Synth 8-6157] synthesizing module 'PC' [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (2#1) [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ROM' [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/ROM.v:23]
+INFO: [Synth 8-3876] $readmem data file 'D:\vivadoproject\singleCPUhlz\rom_data.txt' is read successfully [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/ROM.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'ROM' (3#1) [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/ROM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'select_5_bit' [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/select_5_bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'select_5_bit' (4#1) [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/select_5_bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RegFile' [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/Register File.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RegFile' (5#1) [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/Register File.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Extend' [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/Extend.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Extend' (6#1) [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/Extend.v:23]
+INFO: [Synth 8-6157] synthesizing module 'select_32or5_bit' [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/select_32or5_bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'select_32or5_bit' (7#1) [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/select_32or5_bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'select_32_bit' [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/select_32_bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'select_32_bit' (8#1) [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/select_32_bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-226] default block is never used [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/ALU.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (9#1) [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RAM' [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/RAM.v:23]
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "ram_reg" dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'RAM' (10#1) [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/RAM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PCcounter' [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/PCcounter.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/PCcounter.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'PCcounter' (11#1) [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/PCcounter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Main' (12#1) [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/Main.v:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1584.840 ; gain = 303.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1601.582 ; gain = 320.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1601.582 ; gain = 320.188
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1601.582 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1721.551 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:12 . Memory (MB): peak = 1735.012 ; gain = 453.617
+32 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:19 . Memory (MB): peak = 1735.012 ; gain = 668.969
+save_wave_config {D:/vivadoproject/singleCPUhlz/cpu_sim_behav.wcfg}
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\RAM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\select_32or5_bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\PC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\ControlUnit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\Extend.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\Register File.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\select_5_bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\ROM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\select_32_bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\PCcounter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sim_1\new\cpu_sim.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\Main.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\RAM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\select_32or5_bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\PC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\ControlUnit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\Extend.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\Register File.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\select_5_bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\ROM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\select_32_bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\PCcounter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sim_1\new\cpu_sim.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\Main.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\RAM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\select_32or5_bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\PC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\ControlUnit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\Extend.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\Register File.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\select_5_bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\ROM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\select_32_bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\PCcounter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sim_1\new\cpu_sim.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\Main.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\RAM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\select_32or5_bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\PC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\ControlUnit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\Extend.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\Register File.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\select_5_bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\ROM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\select_32_bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\PCcounter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sim_1\new\cpu_sim.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\Main.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\RAM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\select_32or5_bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\PC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\ControlUnit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\Extend.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\Register File.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\select_5_bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\ROM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\select_32_bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\PCcounter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sim_1\new\cpu_sim.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\Main.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\RAM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\select_32or5_bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\PC.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\ControlUnit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\Extend.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\Register File.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\select_5_bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\ROM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\select_32_bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\PCcounter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sim_1\new\cpu_sim.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\Main.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\vivadoproject\singleCPUhlz\CPU.srcs\sources_1\new\ALU.v:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/vivadoproject/singleCPUhlz/CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/vivadoproject/singleCPUhlz/CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/Extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/Main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/PCcounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCcounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/Register File.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/select_32_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module select_32_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/select_32or5_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module select_32or5_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/select_5_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module select_5_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sim_1/new/cpu_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/vivadoproject/singleCPUhlz/CPU.sim/sim_1/behav/xsim'
+"xelab -wto 84d944399ac04f24940df639ce777d04 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_sim_behav xil_defaultlib.cpu_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/vvvvvvvvvv/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 84d944399ac04f24940df639ce777d04 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_sim_behav xil_defaultlib.cpu_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.ROM
+Compiling module xil_defaultlib.select_5_bit
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.Extend
+Compiling module xil_defaultlib.select_32or5_bit
+Compiling module xil_defaultlib.select_32_bit
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.PCcounter
+Compiling module xil_defaultlib.Main
+Compiling module xil_defaultlib.cpu_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/vivadoproject/singleCPUhlz/CPU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cpu_sim_behav -key {Behavioral:sim_1:Functional:cpu_sim} -tclbatch {cpu_sim.tcl} -view {D:/vivadoproject/singleCPUhlz/cpu_sim_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config D:/vivadoproject/singleCPUhlz/cpu_sim_behav.wcfg
+source cpu_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cpu_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2316.012 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+open_project D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.xpr
+INFO: [Project 1-313] Project file moved from 'D:/vivadoproject/single-cycle-CPU-master/single-cycle-CPU' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.srcs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vvvvvvvvvv/Vivado/2020.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:single_cycle_cpu:1.0'. The one found in IP location 'd:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.srcs' will take precedence over the same IP in location d:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.srcs/sources_1/new
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_axi_gpio_0_0
+design_1_processing_system7_0_0
+design_1_axi_gpio_1_0
+design_1_axi_gpio_2_0
+design_1_axi_gpio_3_0
+design_1_axi_gpio_4_0
+design_1_ps7_0_axi_periph_0
+design_1_axi_gpio_5_0
+design_1_rst_ps7_0_100M_0
+design_1_xbar_0
+design_1_auto_pc_0
+
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_gpio_0/gpio_io_o(undef) and /single_cycle_cpu_0/clk(clk)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_gpio_0/gpio2_io_o(undef) and /single_cycle_cpu_0/rst_n(rst)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/vvvvvvvvvv/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-20] The project contains locked or custom IPs. The pre-compiled version of these IPs will not be referenced and the sources from these IP libraries will be compiled locally.
+INFO: [SIM-utils-54] Inspecting design source files for 'design_1_wrapper' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_7 -L processing_system7_vip_v1_0_9 -L smartconnect_v1_0 -L axi_protocol_checker_v2_0_7 -L axi_protocol_checker_v2_0_1 -L axi_vip_v1_1_1 -L processing_system7_vip_v1_0_3 -L xilinx_vip -prj design_1_wrapper_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.srcs/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v" into library axi_infrastructure_v1_1_0
+INFO: [VRFC 10-311] analyzing module axi_infrastructure_v1_1_0_axi2vector
+INFO: [VRFC 10-311] analyzing module axi_infrastructure_v1_1_0_axic_srl_fifo
+INFO: [VRFC 10-311] analyzing module axi_infrastructure_v1_1_0_vector2axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.srcs/sources_1/bd/design_1/ipshared/02c8/hdl/sc_util_v1_0_vl_rfs.sv" into library smartconnect_v1_0
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_2_mux
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_2_standard_mux16
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_2_pipeline
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_2_onehot_to_binary
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_2_counter
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_2_sample_cycle_ratio
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_2_fifo_output_reg
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_2_xpm_memory_fifo
+WARNING: [VRFC 10-2821] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.srcs/sources_1/bd/design_1/ipshared/02c8/hdl/sc_util_v1_0_vl_rfs.sv:1785]
+WARNING: [VRFC 10-2821] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.srcs/sources_1/bd/design_1/ipshared/02c8/hdl/sc_util_v1_0_vl_rfs.sv:1855]
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_2_xpm_fifo_wrapper
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_2_axic_fifo
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_2_axi_splitter
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_2_axi2vector
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_2_vector2axi
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_2_axi_reg_stall
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_2_srl_rtl
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_2_axic_reg_srl_fifo
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_2_axic_register_slice
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.srcs/sources_1/bd/design_1/ipshared/3b24/hdl/axi_protocol_checker_v2_0_vl_rfs.sv" into library axi_protocol_checker_v2_0_1
+INFO: [VRFC 10-311] analyzing module axi_protocol_checker_v2_0_1_axi4litepc_asr_inline
+INFO: [VRFC 10-311] analyzing module axi_protocol_checker_v2_0_1_axi4pc_asr_inline
+INFO: [VRFC 10-311] analyzing module axi_protocol_checker_v2_0_1_core
+INFO: [VRFC 10-311] analyzing module axi_protocol_checker_v2_0_1_syn_fifo
+INFO: [VRFC 10-311] analyzing module axi_protocol_checker_v2_0_1_reporter
+INFO: [VRFC 10-311] analyzing module axi_protocol_checker_v2_0_1_threadcam
+INFO: [VRFC 10-311] analyzing module axi_protocol_checker_v2_0_1_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.srcs/sources_1/bd/design_1/ipshared/a16a/hdl/axi_vip_v1_1_vl_rfs.sv" into library axi_vip_v1_1_1
+INFO: [VRFC 10-311] analyzing module axi_vip_v1_1_1_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.srcs/sources_1/bd/design_1/ipshared/1313/hdl/processing_system7_vip_v1_0_vl_rfs.sv" into library processing_system7_vip_v1_0_3
+INFO: [VRFC 10-311] analyzing module processing_system7_vip_v1_0_3_arb_wr
+INFO: [VRFC 10-311] analyzing module processing_system7_vip_v1_0_3_arb_rd
+INFO: [VRFC 10-311] analyzing module processing_system7_vip_v1_0_3_arb_wr_4
+INFO: [VRFC 10-311] analyzing module processing_system7_vip_v1_0_3_arb_rd_4
+INFO: [VRFC 10-311] analyzing module processing_system7_vip_v1_0_3_arb_hp2_3
+INFO: [VRFC 10-311] analyzing module processing_system7_vip_v1_0_3_arb_hp0_1
+INFO: [VRFC 10-311] analyzing module processing_system7_vip_v1_0_3_ssw_hp
+INFO: [VRFC 10-311] analyzing module processing_system7_vip_v1_0_3_sparse_mem
+INFO: [VRFC 10-311] analyzing module processing_system7_vip_v1_0_3_reg_map
+INFO: [VRFC 10-311] analyzing module processing_system7_vip_v1_0_3_ocm_mem
+INFO: [VRFC 10-311] analyzing module processing_system7_vip_v1_0_3_intr_wr_mem
+INFO: [VRFC 10-311] analyzing module processing_system7_vip_v1_0_3_intr_rd_mem
+INFO: [VRFC 10-311] analyzing module processing_system7_vip_v1_0_3_fmsw_gp
+INFO: [VRFC 10-311] analyzing module processing_system7_vip_v1_0_3_regc
+INFO: [VRFC 10-311] analyzing module processing_system7_vip_v1_0_3_ocmc
+INFO: [VRFC 10-311] analyzing module processing_system7_vip_v1_0_3_interconnect_model
+INFO: [VRFC 10-311] analyzing module processing_system7_vip_v1_0_3_gen_reset
+INFO: [VRFC 10-311] analyzing module processing_system7_vip_v1_0_3_gen_clock
+INFO: [VRFC 10-311] analyzing module processing_system7_vip_v1_0_3_ddrc
+INFO: [VRFC 10-311] analyzing module processing_system7_vip_v1_0_3_axi_slave
+INFO: [VRFC 10-2458] undeclared symbol read_fifo_empty, assumed default net type wire [D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.srcs/sources_1/bd/design_1/ipshared/1313/hdl/processing_system7_vip_v1_0_vl_rfs.sv:5156]
+INFO: [VRFC 10-311] analyzing module processing_system7_vip_v1_0_3_axi_master
+INFO: [VRFC 10-311] analyzing module processing_system7_vip_v1_0_3_afi_slave
+INFO: [VRFC 10-2458] undeclared symbol bresp_fifo_full, assumed default net type wire [D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.srcs/sources_1/bd/design_1/ipshared/1313/hdl/processing_system7_vip_v1_0_vl_rfs.sv:6805]
+INFO: [VRFC 10-311] analyzing module processing_system7_vip_v1_0_3
+INFO: [VRFC 10-2458] undeclared symbol DMA0_RSTN, assumed default net type wire [../../../../single-cycle-CPU.srcs/sources_1/bd/design_1/ipshared/1313/hdl/processing_system7_vip_v1_0_3_unused_ports.v:284]
+INFO: [VRFC 10-2458] undeclared symbol DMA1_RSTN, assumed default net type wire [../../../../single-cycle-CPU.srcs/sources_1/bd/design_1/ipshared/1313/hdl/processing_system7_vip_v1_0_3_unused_ports.v:294]
+INFO: [VRFC 10-2458] undeclared symbol DMA2_RSTN, assumed default net type wire [../../../../single-cycle-CPU.srcs/sources_1/bd/design_1/ipshared/1313/hdl/processing_system7_vip_v1_0_3_unused_ports.v:304]
+INFO: [VRFC 10-2458] undeclared symbol DMA3_RSTN, assumed default net type wire [../../../../single-cycle-CPU.srcs/sources_1/bd/design_1/ipshared/1313/hdl/processing_system7_vip_v1_0_3_unused_ports.v:314]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.ip_user_files/bd/design_1/ip/design_1_processing_system7_0_0/sim/design_1_processing_system7_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_processing_system7_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.ip_user_files/bd/design_1/ipshared/32fb/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.ip_user_files/bd/design_1/ipshared/32fb/sources_1/new/alu_ctr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_ctr
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.ip_user_files/bd/design_1/ipshared/32fb/sources_1/new/alu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.ip_user_files/bd/design_1/ipshared/32fb/sources_1/new/data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.ip_user_files/bd/design_1/ipshared/32fb/sources_1/new/id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.ip_user_files/bd/design_1/ipshared/32fb/sources_1/new/ie.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ie
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.ip_user_files/bd/design_1/ipshared/32fb/sources_1/new/inst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.ip_user_files/bd/design_1/ipshared/32fb/sources_1/new/mux_PcOrBusA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_PcOrBusA
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.ip_user_files/bd/design_1/ipshared/32fb/sources_1/new/mux_alu_asrc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_alu_asrc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.ip_user_files/bd/design_1/ipshared/32fb/sources_1/new/mux_alu_bsrc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_alu_bsrc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.ip_user_files/bd/design_1/ipshared/32fb/sources_1/new/mux_memto_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_memto_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.ip_user_files/bd/design_1/ipshared/32fb/sources_1/new/mux_store.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_store
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.ip_user_files/bd/design_1/ipshared/32fb/sources_1/new/next_pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module next_pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.ip_user_files/bd/design_1/ipshared/32fb/sources_1/new/pc_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.ip_user_files/bd/design_1/ipshared/32fb/sources_1/new/reg_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.ip_user_files/bd/design_1/ipshared/32fb/sources_1/new/single_cycle_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_cycle_cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.ip_user_files/bd/design_1/ip/design_1_single_cycle_cpu_0_0/sim/design_1_single_cycle_cpu_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_single_cycle_cpu_0_0
+ERROR: [VRFC 10-2934] 'inst' is already declared [D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.ip_user_files/bd/design_1/ip/design_1_single_cycle_cpu_0_0/sim/design_1_single_cycle_cpu_0_0.v:86]
+ERROR: [VRFC 10-2865] module 'design_1_single_cycle_cpu_0_0' ignored due to previous errors [D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.ip_user_files/bd/design_1/ip/design_1_single_cycle_cpu_0_0/sim/design_1_single_cycle_cpu_0_0.v:56]
+"xvhdl --incr --relax -prj design_1_wrapper_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd" into library axi_lite_ipif_v3_0_4
+INFO: [VRFC 10-3107] analyzing entity 'pselect_f'
+INFO: [VRFC 10-3107] analyzing entity 'address_decoder'
+INFO: [VRFC 10-3107] analyzing entity 'slave_attachment'
+INFO: [VRFC 10-3107] analyzing entity 'axi_lite_ipif'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd" into library lib_cdc_v1_0_2
+INFO: [VRFC 10-3107] analyzing entity 'cdc_sync'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.srcs/sources_1/bd/design_1/ipshared/8e66/hdl/interrupt_control_v3_1_vh_rfs.vhd" into library interrupt_control_v3_1_4
+INFO: [VRFC 10-3107] analyzing entity 'interrupt_control'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.srcs/sources_1/bd/design_1/ipshared/c450/hdl/axi_gpio_v2_0_vh_rfs.vhd" into library axi_gpio_v2_0_17
+INFO: [VRFC 10-3107] analyzing entity 'GPIO_Core'
+INFO: [VRFC 10-3107] analyzing entity 'axi_gpio'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.ip_user_files/bd/design_1/ip/design_1_axi_gpio_0_0/sim/design_1_axi_gpio_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_axi_gpio_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.ip_user_files/bd/design_1/ip/design_1_axi_gpio_1_0/sim/design_1_axi_gpio_1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_axi_gpio_1_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.ip_user_files/bd/design_1/ip/design_1_axi_gpio_2_0/sim/design_1_axi_gpio_2_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_axi_gpio_2_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.ip_user_files/bd/design_1/ip/design_1_axi_gpio_3_0/sim/design_1_axi_gpio_3_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_axi_gpio_3_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.ip_user_files/bd/design_1/ip/design_1_axi_gpio_4_0/sim/design_1_axi_gpio_4_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_axi_gpio_4_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.srcs/sources_1/bd/design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd" into library proc_sys_reset_v5_0_12
+INFO: [VRFC 10-3107] analyzing entity 'upcnt_n'
+INFO: [VRFC 10-3107] analyzing entity 'sequence_psr'
+INFO: [VRFC 10-3107] analyzing entity 'lpf'
+INFO: [VRFC 10-3107] analyzing entity 'proc_sys_reset'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.ip_user_files/bd/design_1/ip/design_1_rst_ps7_0_100M_0/sim/design_1_rst_ps7_0_100M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_rst_ps7_0_100M_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.ip_user_files/bd/design_1/ip/design_1_axi_gpio_5_0/sim/design_1_axi_gpio_5_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_axi_gpio_5_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.srcs/sources_1/bd/design_1/ipshared/5c35/hdl/fifo_generator_v13_2_rfs.vhd" into library fifo_generator_v13_2_1
+INFO: [VRFC 10-3107] analyzing entity 'input_blk'
+INFO: [VRFC 10-3107] analyzing entity 'output_blk'
+INFO: [VRFC 10-3107] analyzing entity 'shft_wrapper'
+INFO: [VRFC 10-3107] analyzing entity 'shft_ram'
+INFO: [VRFC 10-3107] analyzing entity 'wr_pf_as'
+INFO: [VRFC 10-3107] analyzing entity 'wr_pf_ss'
+INFO: [VRFC 10-3107] analyzing entity 'rd_pe_as'
+INFO: [VRFC 10-3107] analyzing entity 'rd_pe_ss'
+INFO: [VRFC 10-3107] analyzing entity 'synchronizer_ff'
+INFO: [VRFC 10-3107] analyzing entity 'delay'
+INFO: [VRFC 10-3107] analyzing entity 'bin_cntr'
+INFO: [VRFC 10-3107] analyzing entity 'clk_x_pntrs_builtin'
+INFO: [VRFC 10-3107] analyzing entity 'logic_builtin'
+INFO: [VRFC 10-3107] analyzing entity 'builtin_prim'
+INFO: [VRFC 10-3107] analyzing entity 'builtin_extdepth'
+INFO: [VRFC 10-3107] analyzing entity 'builtin_top'
+INFO: [VRFC 10-3107] analyzing entity 'reset_builtin'
+INFO: [VRFC 10-3107] analyzing entity 'builtin_prim_v6'
+INFO: [VRFC 10-3107] analyzing entity 'builtin_extdepth_v6'
+INFO: [VRFC 10-3107] analyzing entity 'builtin_extdepth_low_latency'
+INFO: [VRFC 10-3107] analyzing entity 'builtin_top_v6'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_generator_v13_2_1_builtin'
+INFO: [VRFC 10-3107] analyzing entity 'bram_sync_reg'
+INFO: [VRFC 10-3107] analyzing entity 'bram_fifo_rstlogic'
+INFO: [VRFC 10-3107] analyzing entity 'reset_blk_ramfifo'
+INFO: [VRFC 10-3107] analyzing entity 'axi_reg_slice'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_generator_top'
+INFO: [VRFC 10-3107] analyzing entity 'fifo_generator_v13_2_1_synth'
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 2354.480 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '10' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 2354.480 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+close_project
+open_project D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.xpr
+INFO: [Project 1-313] Project file moved from 'D:/vivadoproject/sigle_cycle_cpu' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vvvvvvvvvv/Vivado/2020.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/InstructionsMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionsMemory
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/InstructionsMemory.v:31]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/Mux_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/Mux_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/main_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/pcAddFour.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pcAddFour
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/pcAddImmediate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pcAddImmediate
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/signExtend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signExtend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.sim/sim_1/behav/xsim'
+"xelab -wto fb571a159b1840cea32057dd296424e6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/vvvvvvvvvv/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fb571a159b1840cea32057dd296424e6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc
+Compiling module xil_defaultlib.pcAddFour
+Compiling module xil_defaultlib.pcAddImmediate
+Compiling module xil_defaultlib.InstructionsMemory
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.signExtend
+Compiling module xil_defaultlib.Mux_5
+Compiling module xil_defaultlib.Mux_32
+Compiling module xil_defaultlib.main_CPU
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.sim/sim_1/behav/xsim/xsim.dir/test_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Jan  4 17:34:34 2022...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_behav -key {Behavioral:sim_1:Functional:test} -tclbatch {test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File D:\vivadoproject\sigle_cycle_cpu\instructions.mips referenced on D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/InstructionsMemory.v at line 29 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 2354.480 ; gain = 0.000
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: test
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2354.480 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'test' [D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/test.v:23]
+WARNING: [Synth 8-6896] loop limit (65536) exceeded inside initial block, initial block items will be ignored [D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/test.v:64]
+INFO: [Synth 8-6157] synthesizing module 'main_CPU' [D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/main_CPU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pc' [D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/pc.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pc' (1#1) [D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/pc.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pcAddFour' [D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/pcAddFour.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pcAddFour' (2#1) [D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/pcAddFour.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pcAddImmediate' [D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/pcAddImmediate.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pcAddImmediate' (3#1) [D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/pcAddImmediate.v:23]
+INFO: [Synth 8-6157] synthesizing module 'InstructionsMemory' [D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/InstructionsMemory.v:23]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'D:\vivadoproject\sigle_cycle_cpu\instructions.mips'; please make sure the file is added to project and has read permission, ignoring [D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/InstructionsMemory.v:29]
+
+Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
+	1: Unable to determine number of words or word size in RAM. 
+	2: No valid read/write found for RAM. 
+RAM dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'InstructionsMemory' (4#1) [D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/InstructionsMemory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/ControlUnit.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/ControlUnit.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (5#1) [D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/ControlUnit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RegisterFile' [D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/RegisterFile.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RegisterFile' (6#1) [D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/RegisterFile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-226] default block is never used [D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/ALU.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (7#1) [D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DataMemory' [D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/DataMemory.v:23]
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "datamemory_reg" dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'DataMemory' (8#1) [D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/DataMemory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'signExtend' [D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/signExtend.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'signExtend' (9#1) [D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/signExtend.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mux_5' [D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/Mux_5.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Mux_5' (10#1) [D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/Mux_5.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mux_32' [D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/Mux_32.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Mux_32' (11#1) [D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/Mux_32.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'main_CPU' (12#1) [D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/main_CPU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'test' (13#1) [D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/test.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2354.480 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2354.480 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2354.480 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 2354.480 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2354.480 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 2354.480 ; gain = 0.000
+31 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 2354.480 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/InstructionsMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionsMemory
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/InstructionsMemory.v:31]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/Mux_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/Mux_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/main_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/pcAddFour.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pcAddFour
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/pcAddImmediate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pcAddImmediate
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/signExtend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signExtend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.sim/sim_1/behav/xsim'
+"xelab -wto fb571a159b1840cea32057dd296424e6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/vvvvvvvvvv/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fb571a159b1840cea32057dd296424e6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc
+Compiling module xil_defaultlib.pcAddFour
+Compiling module xil_defaultlib.pcAddImmediate
+Compiling module xil_defaultlib.InstructionsMemory
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.signExtend
+Compiling module xil_defaultlib.Mux_5
+Compiling module xil_defaultlib.Mux_32
+Compiling module xil_defaultlib.main_CPU
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_behav -key {Behavioral:sim_1:Functional:test} -tclbatch {test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2354.480 ; gain = 0.000
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/test/uut/Mux_5/RegOut}} 
+save_wave_config {D:/vivadoproject/pro1/sigle_cycle_cpu/test_behav.wcfg}
+add_files -fileset sim_1 -norecurse D:/vivadoproject/pro1/sigle_cycle_cpu/test_behav.wcfg
+set_property xsim.view D:/vivadoproject/pro1/sigle_cycle_cpu/test_behav.wcfg [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/InstructionsMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionsMemory
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/InstructionsMemory.v:31]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/Mux_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/Mux_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/main_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/pcAddFour.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pcAddFour
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/pcAddImmediate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pcAddImmediate
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/signExtend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signExtend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.srcs/sources_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.sim/sim_1/behav/xsim'
+"xelab -wto fb571a159b1840cea32057dd296424e6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/vvvvvvvvvv/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fb571a159b1840cea32057dd296424e6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc
+Compiling module xil_defaultlib.pcAddFour
+Compiling module xil_defaultlib.pcAddImmediate
+Compiling module xil_defaultlib.InstructionsMemory
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.signExtend
+Compiling module xil_defaultlib.Mux_5
+Compiling module xil_defaultlib.Mux_32
+Compiling module xil_defaultlib.main_CPU
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_behav -key {Behavioral:sim_1:Functional:test} -tclbatch {test.tcl} -view {D:/vivadoproject/pro1/sigle_cycle_cpu/test_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config D:/vivadoproject/pro1/sigle_cycle_cpu/test_behav.wcfg
+source test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2354.480 ; gain = 0.000
+current_wave_config {test_behav.wcfg}
+test_behav.wcfg
+add_wave {{/test/uut/Mux_32_ALUSrcB/selected}} 
+current_wave_config {test_behav.wcfg}
+test_behav.wcfg
+add_wave {{/test/uut/Mux_32_ALUM2Reg/selected}} 
+save_wave_config {D:/vivadoproject/pro1/sigle_cycle_cpu/test_behav.wcfg}
+current_wave_config {test_behav.wcfg}
+D:/vivadoproject/pro1/sigle_cycle_cpu/test_behav.wcfg
+add_wave {{/test/uut/signExtend/immediate_32}} 
+save_wave_config {D:/vivadoproject/pro1/sigle_cycle_cpu/test_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.sim/sim_1/behav/xsim'
+"xelab -wto fb571a159b1840cea32057dd296424e6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/vvvvvvvvvv/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fb571a159b1840cea32057dd296424e6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_behav -key {Behavioral:sim_1:Functional:test} -tclbatch {test.tcl} -view {D:/vivadoproject/pro1/sigle_cycle_cpu/test_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config D:/vivadoproject/pro1/sigle_cycle_cpu/test_behav.wcfg
+source test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2354.480 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.sim/sim_1/behav/xsim'
+"xelab -wto fb571a159b1840cea32057dd296424e6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/vvvvvvvvvv/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fb571a159b1840cea32057dd296424e6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_behav -key {Behavioral:sim_1:Functional:test} -tclbatch {test.tcl} -view {D:/vivadoproject/pro1/sigle_cycle_cpu/test_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config D:/vivadoproject/pro1/sigle_cycle_cpu/test_behav.wcfg
+source test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2354.480 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jan  4 19:01:14 2022...

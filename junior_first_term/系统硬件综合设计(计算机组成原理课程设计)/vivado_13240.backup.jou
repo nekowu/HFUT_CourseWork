@@ -1,0 +1,77 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Jan  3 18:30:45 2022
+# Process ID: 13240
+# Current directory: D:/vivadoproject/singleCPUhlz
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16972 D:\vivadoproject\singleCPUhlz\CPU.xpr
+# Log file: D:/vivadoproject/singleCPUhlz/vivado.log
+# Journal file: D:/vivadoproject/singleCPUhlz\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivadoproject/singleCPUhlz/CPU.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source cpu_sim.tcl
+current_wave_config {Untitled 1}
+add_wave {{/cpu_sim/one/alu/result}} 
+current_wave_config {Untitled 1}
+add_wave {{/cpu_sim/one/alu/rega}} 
+current_wave_config {Untitled 1}
+add_wave {{/cpu_sim/one/alu/regb}} 
+save_wave_config {D:/vivadoproject/singleCPUhlz/cpu_sim_behav.wcfg}
+add_files -fileset sim_1 -norecurse D:/vivadoproject/singleCPUhlz/cpu_sim_behav.wcfg
+set_property xsim.view D:/vivadoproject/singleCPUhlz/cpu_sim_behav.wcfg [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config D:/vivadoproject/singleCPUhlz/cpu_sim_behav.wcfg
+source cpu_sim.tcl
+current_wave_config {cpu_sim_behav.wcfg}
+add_wave {{/cpu_sim/one/pc/NewAdd}} 
+save_wave_config {D:/vivadoproject/singleCPUhlz/cpu_sim_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/vivadoproject/singleCPUhlz/cpu_sim_behav.wcfg
+source cpu_sim.tcl
+run all
+restart
+save_wave_config {D:/vivadoproject/singleCPUhlz/cpu_sim_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/vivadoproject/singleCPUhlz/cpu_sim_behav.wcfg
+source cpu_sim.tcl
+synth_design -rtl -name rtl_1
+close_sim
+close_project
+open_project D:/vivadoproject/Single_CPU_Design/Single_CPU_Design.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+close_project
+open_project D:/vivadoproject/SingleCycleCPU/SingleCycleCPU.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+close_project
+open_project D:/vivadoproject/singleCPUhlz/CPU.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+close_project
+open_project D:/vivadoproject/Single_CPU_Design/Single_CPU_Design.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/vivadoproject/Single_CPU_Design/Test_CPU_behav.wcfg
+source Test_CPU.tcl
+synth_design -rtl -name rtl_1
+current_wave_config {Test_CPU_behav.wcfg}
+add_wave {{/Test_CPU/uut/alu/ReadData1}} 
+current_wave_config {Test_CPU_behav.wcfg}
+add_wave {{/Test_CPU/uut/alu/ReadData2}} 
+current_wave_config {Test_CPU_behav.wcfg}
+add_wave {{/Test_CPU/uut/alu/sa}} 
+save_wave_config {D:/vivadoproject/Single_CPU_Design/Test_CPU_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/vivadoproject/Single_CPU_Design/Test_CPU_behav.wcfg
+source Test_CPU.tcl
+save_wave_config {D:/vivadoproject/Single_CPU_Design/Test_CPU_behav.wcfg}
+close_sim

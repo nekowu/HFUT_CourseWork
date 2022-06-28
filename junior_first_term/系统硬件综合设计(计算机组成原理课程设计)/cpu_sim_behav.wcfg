@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="cpu_sim_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="cpu_sim" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="66301fs"></ZoomEndTime>
+      <Cursor1Time time="18300fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="92"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="28" />
+   <wvobject fp_name="/cpu_sim/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_sim/Reset" type="logic">
+      <obj_property name="ElementShortName">Reset</obj_property>
+      <obj_property name="ObjectShortName">Reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_sim/pcWre" type="logic">
+      <obj_property name="ElementShortName">pcWre</obj_property>
+      <obj_property name="ObjectShortName">pcWre</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_sim/pcSrc" type="array">
+      <obj_property name="ElementShortName">pcSrc[1:0]</obj_property>
+      <obj_property name="ObjectShortName">pcSrc[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_sim/op" type="array">
+      <obj_property name="ElementShortName">op[5:0]</obj_property>
+      <obj_property name="ObjectShortName">op[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_sim/o_p" type="array">
+      <obj_property name="ElementShortName">o_p[31:0]</obj_property>
+      <obj_property name="ObjectShortName">o_p[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_sim/currentAdd" type="array">
+      <obj_property name="ElementShortName">currentAdd[31:0]</obj_property>
+      <obj_property name="ObjectShortName">currentAdd[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_sim/one/pc/NewAdd" type="array">
+      <obj_property name="ElementShortName">NewAdd[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NewAdd[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_sim/one/cu/RegDst" type="logic">
+      <obj_property name="ElementShortName">RegDst</obj_property>
+      <obj_property name="ObjectShortName">RegDst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_sim/one/U5_1/result" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">result[4:0]</obj_property>
+      <obj_property name="ObjectShortName">result[4:0]</obj_property>
+      <obj_property name="label">rd_or_rt_result[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_sim/one/cu/ALUSrcA" type="logic">
+      <obj_property name="ElementShortName">ALUSrcA</obj_property>
+      <obj_property name="ObjectShortName">ALUSrcA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_sim/readData1" type="array">
+      <obj_property name="ElementShortName">readData1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">readData1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_sim/one/U32_1/select_two" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">select_two[4:0]</obj_property>
+      <obj_property name="ObjectShortName">select_two[4:0]</obj_property>
+      <obj_property name="label">sa[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_sim/one/U32_1/result" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result[31:0]</obj_property>
+      <obj_property name="label">Aresult[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_sim/one/cu/ALUSrcB" type="logic">
+      <obj_property name="ElementShortName">ALUSrcB</obj_property>
+      <obj_property name="ObjectShortName">ALUSrcB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_sim/readData2" type="array">
+      <obj_property name="ElementShortName">readData2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">readData2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_sim/extendData" type="array">
+      <obj_property name="ElementShortName">extendData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">extendData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_sim/one/U32_2/result" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result[31:0]</obj_property>
+      <obj_property name="label">Bresult[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_sim/one/cu/DBDataSrc" type="logic">
+      <obj_property name="ElementShortName">DBDataSrc</obj_property>
+      <obj_property name="ObjectShortName">DBDataSrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_sim/one/U32_3/select_one" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">select_one[31:0]</obj_property>
+      <obj_property name="ObjectShortName">select_one[31:0]</obj_property>
+      <obj_property name="label">alu_result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_sim/one/U32_3/select_two" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">select_two[31:0]</obj_property>
+      <obj_property name="ObjectShortName">select_two[31:0]</obj_property>
+      <obj_property name="label">ramdataout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_sim/writeData" type="array">
+      <obj_property name="ElementShortName">writeData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">writeData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_sim/one/U32_3/result" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result[31:0]</obj_property>
+      <obj_property name="label">DBresult[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_sim/aluop" type="array">
+      <obj_property name="ElementShortName">aluop[2:0]</obj_property>
+      <obj_property name="ObjectShortName">aluop[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_sim/one/alu/rega" type="array">
+      <obj_property name="ElementShortName">rega[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rega[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_sim/one/alu/regb" type="array">
+      <obj_property name="ElementShortName">regb[31:0]</obj_property>
+      <obj_property name="ObjectShortName">regb[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_sim/Result" type="array">
+      <obj_property name="ElementShortName">Result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_sim/zero" type="logic">
+      <obj_property name="ElementShortName">zero</obj_property>
+      <obj_property name="ObjectShortName">zero</obj_property>
+   </wvobject>
+</wave_config>
