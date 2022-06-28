@@ -1,0 +1,192 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Jan  5 18:48:26 2022
+# Process ID: 18796
+# Current directory: D:/vivadoproject/singleCPUhlz
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10344 D:\vivadoproject\singleCPUhlz\CPU.xpr
+# Log file: D:/vivadoproject/singleCPUhlz/vivado.log
+# Journal file: D:/vivadoproject/singleCPUhlz\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivadoproject/singleCPUhlz/CPU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vvvvvvvvvv/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 1068.484 ; gain = 0.000
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: Main
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1458.441 ; gain = 236.098
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Main' [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/Main.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/ControlUnit.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/ControlUnit.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (1#1) [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/ControlUnit.v:23]
+WARNING: [Synth 8-6104] Input port 'Reset' has an internal driver [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/Main.v:52]
+INFO: [Synth 8-6157] synthesizing module 'PC' [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (2#1) [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ROM' [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/ROM.v:23]
+INFO: [Synth 8-3876] $readmem data file 'D:\vivadoproject\singleCPUhlz\rom_data.txt' is read successfully [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/ROM.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'ROM' (3#1) [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/ROM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'select_5_bit' [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/select_5_bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'select_5_bit' (4#1) [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/select_5_bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RegFile' [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/Register File.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RegFile' (5#1) [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/Register File.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Extend' [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/Extend.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Extend' (6#1) [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/Extend.v:23]
+INFO: [Synth 8-6157] synthesizing module 'select_32or5_bit' [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/select_32or5_bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'select_32or5_bit' (7#1) [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/select_32or5_bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'select_32_bit' [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/select_32_bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'select_32_bit' (8#1) [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/select_32_bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-226] default block is never used [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/ALU.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (9#1) [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RAM' [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/RAM.v:23]
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "ram_reg" dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'RAM' (10#1) [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/RAM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PCcounter' [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/PCcounter.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/PCcounter.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'PCcounter' (11#1) [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/PCcounter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Main' (12#1) [D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/Main.v:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1521.176 ; gain = 298.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1521.176 ; gain = 298.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1521.176 ; gain = 298.832
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 1521.176 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1640.516 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 1640.516 ; gain = 418.172
+32 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:21 . Memory (MB): peak = 1640.516 ; gain = 572.031
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/vivadoproject/singleCPUhlz/CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/vivadoproject/singleCPUhlz/CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/Extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/Main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/PCcounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCcounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/Register File.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/select_32_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module select_32_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/select_32or5_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module select_32or5_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sources_1/new/select_5_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module select_5_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadoproject/singleCPUhlz/CPU.srcs/sim_1/new/cpu_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/vivadoproject/singleCPUhlz/CPU.sim/sim_1/behav/xsim'
+"xelab -wto 84d944399ac04f24940df639ce777d04 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_sim_behav xil_defaultlib.cpu_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/vvvvvvvvvv/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 84d944399ac04f24940df639ce777d04 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_sim_behav xil_defaultlib.cpu_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.ROM
+Compiling module xil_defaultlib.select_5_bit
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.Extend
+Compiling module xil_defaultlib.select_32or5_bit
+Compiling module xil_defaultlib.select_32_bit
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.PCcounter
+Compiling module xil_defaultlib.Main
+Compiling module xil_defaultlib.cpu_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_sim_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/vivadoproject/singleCPUhlz/CPU.sim/sim_1/behav/xsim/xsim.dir/cpu_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Jan  5 18:51:55 2022...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/vivadoproject/singleCPUhlz/CPU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cpu_sim_behav -key {Behavioral:sim_1:Functional:cpu_sim} -tclbatch {cpu_sim.tcl} -view {D:/vivadoproject/singleCPUhlz/cpu_sim_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config D:/vivadoproject/singleCPUhlz/cpu_sim_behav.wcfg
+source cpu_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1708.492 ; gain = 9.594
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cpu_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1708.492 ; gain = 9.594
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jan  5 18:54:33 2022...

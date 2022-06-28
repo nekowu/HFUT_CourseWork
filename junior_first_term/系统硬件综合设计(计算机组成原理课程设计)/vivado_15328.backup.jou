@@ -1,0 +1,69 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Jan  4 15:38:22 2022
+# Process ID: 15328
+# Current directory: D:/vivadoproject/singleCPUhlz
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10204 D:\vivadoproject\singleCPUhlz\CPU.xpr
+# Log file: D:/vivadoproject/singleCPUhlz/vivado.log
+# Journal file: D:/vivadoproject/singleCPUhlz\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivadoproject/singleCPUhlz/CPU.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/vivadoproject/singleCPUhlz/cpu_sim_behav.wcfg
+source cpu_sim.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadoproject/singleCPUhlz/cpu_sim_behav.wcfg
+source cpu_sim.tcl
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+synth_design -rtl -name rtl_1
+save_wave_config {D:/vivadoproject/singleCPUhlz/cpu_sim_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/vivadoproject/singleCPUhlz/cpu_sim_behav.wcfg
+source cpu_sim.tcl
+close_sim
+close_project
+open_project D:/vivadoproject/pro1/single-cycle-CPU-master/single-cycle-CPU/single-cycle-CPU.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+close_project
+open_project D:/vivadoproject/pro1/sigle_cycle_cpu/sigle_cycle_cpu.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source test.tcl
+synth_design -rtl -name rtl_1
+close_sim
+launch_simulation
+source test.tcl
+current_wave_config {Untitled 2}
+add_wave {{/test/uut/Mux_5/RegOut}} 
+save_wave_config {D:/vivadoproject/pro1/sigle_cycle_cpu/test_behav.wcfg}
+add_files -fileset sim_1 -norecurse D:/vivadoproject/pro1/sigle_cycle_cpu/test_behav.wcfg
+set_property xsim.view D:/vivadoproject/pro1/sigle_cycle_cpu/test_behav.wcfg [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config D:/vivadoproject/pro1/sigle_cycle_cpu/test_behav.wcfg
+source test.tcl
+current_wave_config {test_behav.wcfg}
+add_wave {{/test/uut/Mux_32_ALUSrcB/selected}} 
+current_wave_config {test_behav.wcfg}
+add_wave {{/test/uut/Mux_32_ALUM2Reg/selected}} 
+save_wave_config {D:/vivadoproject/pro1/sigle_cycle_cpu/test_behav.wcfg}
+current_wave_config {test_behav.wcfg}
+add_wave {{/test/uut/signExtend/immediate_32}} 
+save_wave_config {D:/vivadoproject/pro1/sigle_cycle_cpu/test_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/vivadoproject/pro1/sigle_cycle_cpu/test_behav.wcfg
+source test.tcl
+close_sim
+launch_simulation
+open_wave_config D:/vivadoproject/pro1/sigle_cycle_cpu/test_behav.wcfg
+source test.tcl
+close_sim
