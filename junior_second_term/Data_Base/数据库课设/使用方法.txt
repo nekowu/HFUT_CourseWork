@@ -1,0 +1,18 @@
+安装pycharm
+安装python3.8
+执行pip install -r requirements.txt(建议pip之前修改pip源为国内镜像)
+在setting.py中的DATABASES修改数据库相关配置
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',# 数据库种类（这里为mysql）
+        'NAME': 'english',# 数据库名称
+        'USER': 'xxx',# 用户名
+        'PASSWORD': 'xxx',# 密码
+        'HOST': 'localhost',# 数据库地址
+        'PORT': '3306',# 数据库连接端口
+    }
+}
+安装MYSQL，安装navicat，连接数据库，将数据en.sql导入到数据库中
+分别执行python manage.py makemigrations和python manage.py migrate来生成django的Models。
+再执行python manage.py createsuperuser根据命令行提示设置相关管理员帐户。
+最后执行python manage.py runserver即可在http://localhost:8000打开网站。
